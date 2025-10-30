@@ -14,7 +14,7 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const menuItems = ["Home", "Courses", "About", "Contact"];
+  const menuItems = ["Home", "Programs", "Impact", "About", "Contact"];
 
   const scrollToSection = (section: string) => {
     const element = document.getElementById(section.toLowerCase());
@@ -36,7 +36,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+            <h1 className="text-2xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               CK Technology
             </h1>
           </div>
@@ -47,19 +47,19 @@ const Navigation = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-foreground font-medium hover:text-primary transition-smooth relative group"
+                className="text-deep font-grotesk font-medium hover:text-primary transition-all duration-200 relative group"
               >
                 {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
             <Button
               size="lg"
-              onClick={() => window.open("https://wa.me/9035000569", "_blank")}
+              onClick={() => window.open("https://wa.me/9108918437", "_blank")}
               className="gap-2"
             >
               <MessageCircle className="w-4 h-4" />
-              WhatsApp Us
+              Enquire
             </Button>
           </div>
 
@@ -83,7 +83,7 @@ const Navigation = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="block w-full text-left px-4 py-3 text-foreground font-medium hover:text-primary hover:bg-muted transition-smooth"
+                className="block w-full text-left px-4 py-3 text-deep font-grotesk font-medium hover:text-primary hover:bg-muted transition-all duration-200"
               >
                 {item}
               </button>
@@ -92,10 +92,10 @@ const Navigation = () => {
               <Button
                 size="lg"
                 className="w-full gap-2"
-                onClick={() => window.open("https://wa.me/9035000569", "_blank")}
+                onClick={() => window.open("https://wa.me/9108918437", "_blank")}
               >
                 <MessageCircle className="w-4 h-4" />
-                WhatsApp Us
+                Enquire
               </Button>
             </div>
           </div>
