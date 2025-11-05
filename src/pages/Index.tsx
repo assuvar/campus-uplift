@@ -6,19 +6,20 @@ import ProcessTimeline from "@/components/ProcessTimeline";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.svg";
 import { 
-  Code2, 
-  Database, 
-  Brain, 
-  Shield, 
-  Cloud, 
-  Palette,
+  FileSpreadsheet, 
+  TrendingUp, 
+  BarChart3, 
+  PieChart, 
+  LineChart,
+  Database,
+  Code2,
+  FileCode,
+  Users,
   MessageCircle,
   ArrowRight,
   CheckCircle2,
   Sparkles,
-  Users,
   Award,
-  TrendingUp,
   Phone,
   Mail,
   MapPin
@@ -28,41 +29,56 @@ import heroImage from "@/assets/hero-students.jpg";
 const Index = () => {
   const programs = [
     {
-      icon: Code2,
-      title: "Full Stack Web Development (MERN)",
-      description: "Master MongoDB, Express.js, React, and Node.js to build modern web applications from scratch.",
+      icon: FileSpreadsheet,
+      title: "Excel Analytics",
+      description: "Master data analysis with Excel. Learn advanced formulas, pivot tables, data visualization, and business intelligence techniques that employers demand.",
       featured: true
     },
     {
+      icon: TrendingUp,
+      title: "Digital Marketing",
+      description: "Dive into SEO, social media marketing, content strategy, and analytics to build powerful digital campaigns that drive real results."
+    },
+    {
+      icon: BarChart3,
+      title: "Power BI",
+      description: "Transform raw data into stunning visual insights. Create interactive dashboards and reports that help businesses make data-driven decisions."
+    },
+    {
+      icon: PieChart,
+      title: "Tableau",
+      description: "Unlock the power of visual analytics. Build beautiful, interactive data visualizations that tell compelling business stories."
+    },
+    {
+      icon: LineChart,
+      title: "Business Analytics",
+      description: "Learn to analyze business metrics, identify trends, and make strategic recommendations that impact the bottom line."
+    },
+    {
       icon: Database,
-      title: "Data Science & Machine Learning",
-      description: "Learn data analysis, visualization, and machine learning algorithms."
+      title: "Predictive Data Analytics",
+      description: "Harness machine learning and statistical modeling to forecast trends, predict outcomes, and give businesses a competitive edge."
     },
     {
-      icon: Brain,
-      title: "Artificial Intelligence with Python",
-      description: "Explore AI concepts, neural networks, and deep learning."
+      icon: Code2,
+      title: "R Programming",
+      description: "Master R for statistical computing and data science. Build powerful analytics solutions and create publication-ready visualizations."
     },
     {
-      icon: Shield,
-      title: "Cybersecurity & Ethical Hacking",
-      description: "Understand security principles and penetration testing."
+      icon: FileCode,
+      title: "SQL",
+      description: "Command databases with confidence. Write efficient queries, manage data, and extract meaningful insights from complex databases."
     },
     {
-      icon: Cloud,
-      title: "Cloud Computing (AWS & Azure)",
-      description: "Master cloud platforms and infrastructure management."
-    },
-    {
-      icon: Palette,
-      title: "UI/UX Product Design",
-      description: "Create intuitive interfaces and exceptional experiences."
+      icon: Users,
+      title: "Soft Skills & Placement Training",
+      description: "Polish your resume, ace interviews, and develop communication skills that set you apart. Get job-ready with our comprehensive placement support."
     }
   ];
 
   const stats = [
-    { value: "500+", label: "Students Trained", icon: Users },
-    { value: "50+", label: "College Partners", icon: Award },
+    { value: "2000+", label: "Students Trained", icon: Users },
+    { value: "75+", label: "College Partners", icon: Award },
     { value: "95%", label: "Success Rate", icon: TrendingUp },
     { value: "100%", label: "Industry Experts", icon: Sparkles }
   ];
@@ -199,11 +215,24 @@ const Index = () => {
 
           {/* Second Row */}
           <div className="grid md:grid-cols-3 gap-6 mt-6">
-            {programs.slice(3).map((program, index) => (
+            {programs.slice(3, 6).map((program, index) => (
               <div
                 key={index}
                 className="animate-fade-in"
                 style={{ animationDelay: `${(index + 3) * 100}ms` }}
+              >
+                <ProgramCard {...program} compact />
+              </div>
+            ))}
+          </div>
+
+          {/* Third Row */}
+          <div className="grid md:grid-cols-3 gap-6 mt-6">
+            {programs.slice(6).map((program, index) => (
+              <div
+                key={index}
+                className="animate-fade-in"
+                style={{ animationDelay: `${(index + 6) * 100}ms` }}
               >
                 <ProgramCard {...program} compact />
               </div>
