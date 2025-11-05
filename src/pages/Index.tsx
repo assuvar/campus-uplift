@@ -4,6 +4,7 @@ import ProgramCard from "@/components/ProgramCard";
 import StatsCounter from "@/components/StatsCounter";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.svg";
 import { 
   Code2, 
   Database, 
@@ -353,9 +354,12 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             {/* Logo & Description */}
             <div>
-              <h3 className="text-2xl font-display font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                CK Technology
-              </h3>
+              <div className="flex items-center gap-3 mb-4">
+                <img src={logo} alt="CK Technology Logo" className="h-14 w-14 object-contain" />
+                <h3 className="text-2xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  CK Technology
+                </h3>
+              </div>
               <p className="text-white/70 mb-4 font-sans">
                 Empowering colleges with industry-ready training programs.
               </p>
