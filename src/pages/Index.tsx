@@ -354,9 +354,9 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             {/* Logo & Description */}
             <div>
-              <div className="flex items-center gap-3 mb-4">
-                <img src={logo} alt="CK Technology Logo" className="h-14 w-14 object-contain" />
-                <h3 className="text-2xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <div className="flex items-center gap-4 mb-4">
+                <img src={logo} alt="CK Technology Logo" className="h-24 w-24 object-contain" />
+                <h3 className="text-3xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                   CK Technology
                 </h3>
               </div>
