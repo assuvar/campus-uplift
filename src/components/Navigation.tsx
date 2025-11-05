@@ -34,41 +34,39 @@ const Navigation = () => {
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-4">
-            <img src={logo} alt="CK Technology Logo" className="h-40 w-40 object-contain" />
-            <h1 className="text-3xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              CK Technology
-            </h1>
+          <div className="flex-shrink-0">
+            <img src={logo} alt="CK Technology Logo" className="h-12 w-12 md:h-16 md:w-16 object-contain" />
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
             {menuItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-deep font-grotesk font-medium hover:text-primary transition-all duration-200 relative group"
+                className="text-deep font-grotesk font-medium hover:text-primary transition-all duration-200 relative group text-sm lg:text-base"
               >
                 {item}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
             <Button
-              size="lg"
+              size="default"
               onClick={() => window.open("https://wa.me/9108918437", "_blank")}
               className="gap-2"
             >
               <MessageCircle className="w-4 h-4" />
-              Enquire
+              <span className="hidden lg:inline">Enquire</span>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-deep hover:text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
               <X className="w-6 h-6" />
@@ -92,7 +90,7 @@ const Navigation = () => {
             ))}
             <div className="px-4 py-2">
               <Button
-                size="lg"
+                size="default"
                 className="w-full gap-2"
                 onClick={() => window.open("https://wa.me/9108918437", "_blank")}
               >
