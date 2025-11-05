@@ -37,8 +37,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-4">
-            <img src={logo} alt="CK Technology Logo" className="h-20 w-20 object-contain" />
-            <h1 className="text-2xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <img src={logo} alt="CK Technology Logo" className="h-40 w-40 object-contain" />
+            <h1 className="text-3xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               CK Technology
             </h1>
           </div>

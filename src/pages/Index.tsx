@@ -341,7 +341,7 @@ const Index = () => {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded p-4 hover:bg-white/10 transition-all">
                 <MapPin className="w-6 h-6 text-accent mx-auto mb-2" />
                 <p className="text-white/60 text-sm mb-1">Location</p>
-                <p className="text-white font-semibold text-sm">Bangalore – 560056</p>
+                <p className="text-white font-semibold text-sm">BTM 2nd stage, Bengaluru-560076</p>
               </div>
             </div>
           </div>
@@ -355,7 +355,7 @@ const Index = () => {
             {/* Logo & Description */}
             <div>
               <div className="flex items-center gap-4 mb-4">
-                <img src={logo} alt="CK Technology Logo" className="h-24 w-24 object-contain" />
+                <img src={logo} alt="CK Technology Logo" className="h-40 w-40 object-contain" />
                 <h3 className="text-3xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                   CK Technology
                 </h3>
@@ -364,8 +364,8 @@ const Index = () => {
                 Empowering colleges with industry-ready training programs.
               </p>
               <div className="text-sm text-white/60 space-y-1">
-                <p>No 57, VV Layout, Malathahalli</p>
-                <p>Bangalore – 560056</p>
+                <p>15, 100feet ring road, near Jayadeva metro station</p>
+                <p>BTM 2nd stage, Bengaluru-560076</p>
                 <p className="mt-2">Phone: +91 91089 18437</p>
                 <p>Email: contact@tgtechnology.com</p>
               </div>
