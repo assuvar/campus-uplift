@@ -77,10 +77,10 @@ const Index = () => {
   ];
 
   const stats = [
-    { value: "2000+", label: "Students Trained", icon: Users },
-    { value: "75+", label: "College Partners", icon: Award },
-    { value: "95%", label: "Success Rate", icon: TrendingUp },
-    { value: "100%", label: "Industry Experts", icon: Sparkles }
+    { value: "2000+", label: "People Trained", icon: Users },
+    { value: "275+", label: "College Partners", icon: Award },
+    { value: "90%", label: "Success Rate", icon: TrendingUp },
+    { value: "100%", label: "Job Ready Skills", icon: Sparkles }
   ];
 
   const process = [
@@ -95,51 +95,48 @@ const Index = () => {
       <Navigation />
       <WhatsAppButton />
 
-      {/* Hero Section - Diagonal Split */}
-      <section id="home" className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        <div className="absolute inset-0 gradient-hero"></div>
-        
-        {/* Tech Grid Background */}
-        <div className="absolute inset-0 opacity-5">
+      {/* Hero Section - Centered with Impact Background */}
+      <section id="home" className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden min-h-[90vh] flex items-center">
+        <div className="absolute inset-0 bg-gradient-to-br from-deep via-primary/20 to-deep"></div>
+        <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
-            backgroundImage: 'linear-gradient(rgba(0, 123, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 123, 255, 0.1) 1px, transparent 1px)',
-            backgroundSize: '50px 50px'
+            backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
           }}></div>
         </div>
 
         {/* Floating Shapes */}
         <div className="absolute top-20 left-10 w-24 h-24 border-2 border-accent/20 rotate-45 animate-float"></div>
-        <div className="absolute bottom-32 right-20 w-16 h-16 border-2 border-primary/20 animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-32 right-20 w-16 h-16 border-2 border-accent/20 animate-float" style={{ animationDelay: '1s' }}></div>
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
+          <div className="max-w-5xl mx-auto text-center">
+            {/* Content */}
             <div className="animate-fade-in">
-              <div className="inline-block mb-4 px-4 py-1 bg-accent/10 border border-accent/20 rounded text-accent font-grotesk text-sm font-semibold uppercase tracking-wide">
+              <div className="inline-block mb-6 px-6 py-2 bg-accent/10 border border-accent/20 rounded text-accent font-grotesk text-sm font-semibold uppercase tracking-widest">
                 Industry Training Excellence
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6 text-deep">
-                Engineering <span className="text-glow bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Future-Ready</span> Skills
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-8 text-white">
+                Engineering <span className="text-glow bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Future-Ready</span> Skills
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed font-sans">
+              <p className="text-xl md:text-2xl text-white/80 mb-10 leading-relaxed font-sans max-w-3xl mx-auto">
                 Industry trainers. Campus programs. Job-ready students.
               </p>
               
               {/* Trust Bullets */}
-              <div className="space-y-3 mb-8">
+              <div className="space-y-4 mb-10 max-w-2xl mx-auto">
                 {[
                   "Expert trainers from leading tech companies",
                   "Industry-aligned curriculum & certifications",
                   "Hands-on projects & career placement support"
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3 animate-slide-up" style={{ animationDelay: `${index * 100}ms` }}>
-                    <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-deep font-medium">{item}</span>
+                  <div key={index} className="flex items-center justify-center gap-3 animate-slide-up" style={{ animationDelay: `${index * 100}ms` }}>
+                    <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0" />
+                    <span className="text-white/90 font-medium text-lg">{item}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   size="lg" 
                   className="gap-2"
@@ -157,20 +154,6 @@ const Index = () => {
                   <MessageCircle className="w-5 h-5" />
                   Chat on WhatsApp
                 </Button>
-              </div>
-            </div>
-
-            {/* Right Image with Abstract SVG */}
-            <div className="relative animate-fade-in">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-transparent rounded blur-3xl"></div>
-              <div className="relative">
-                <img 
-                  src={heroImage} 
-                  alt="Students learning in a modern technology classroom with laptops and digital screens" 
-                  className="relative rounded shadow-2xl w-full h-auto object-cover border-2 border-accent/10"
-                />
-                {/* Abstract Overlay Shape */}
-                <div className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-accent/30 to-primary/30 rounded-full blur-2xl animate-glow-pulse"></div>
               </div>
             </div>
           </div>
