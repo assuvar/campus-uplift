@@ -383,11 +383,8 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             {/* Logo & Description */}
             <div>
-              <div className="flex items-center gap-4 mb-4">
-                <img src={logo} alt="CK Technology Logo" className="h-40 w-40 object-contain" />
-                <h3 className="text-3xl font-display font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  CK Technology
-                </h3>
+              <div className="mb-4">
+                <img src={logo} alt="CK Technology Logo" className="h-24 w-auto md:h-32 lg:h-40 object-contain" />
               </div>
               <p className="text-white/70 mb-4 font-sans">
                 Empowering colleges with industry-ready training programs.

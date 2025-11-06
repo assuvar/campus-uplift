@@ -37,7 +37,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src={logo} alt="CK Technology Logo" className="h-12 w-12 md:h-16 md:w-16 object-contain" />
+            <img src={logo} alt="CK Technology Logo" className="h-16 w-auto md:h-20 lg:h-24 object-contain" />
           </div>
 
           {/* Desktop Menu */}
