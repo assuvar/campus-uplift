@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProgramCard from "@/components/ProgramCard";
-import StatsCounter from "@/components/StatsCounter";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.svg";
@@ -76,12 +75,6 @@ const Index = () => {
     }
   ];
 
-  const stats = [
-    { value: "2000+", label: "People Trained", icon: Users },
-    { value: "275+", label: "College Partners", icon: Award },
-    { value: "90%", label: "Success Rate", icon: TrendingUp },
-    { value: "100%", label: "Job Ready Skills", icon: Sparkles }
-  ];
 
   const process = [
     { step: "Partner", description: "We collaborate with your institution to understand your needs" },
@@ -224,35 +217,61 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Impact Stats Section */}
-      <section id="impact" className="py-20 md:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-deep via-primary/20 to-deep"></div>
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-          }}></div>
-        </div>
-        
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-white">
-              Our Impact in Numbers
+      {/* Why Choose Us Section */}
+      <section id="impact" className="py-20 md:py-32 bg-muted/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="inline-block mb-4 px-4 py-1 bg-primary/10 border border-primary/20 rounded text-primary font-grotesk text-sm font-semibold uppercase tracking-wide">
+              Why Choose Us
+            </div>
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-deep">
+              What Makes Us Different
             </h2>
-            <p className="text-xl text-white/80 font-sans">
-              Transforming education across institutions
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-sans">
+              We bring industry expertise directly to your campus
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="animate-slide-up"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <StatsCounter {...stat} />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="card-glow p-8 animate-fade-in">
+              <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <Users className="w-7 h-7 text-primary" />
               </div>
-            ))}
+              <h3 className="text-xl font-display font-bold mb-3 text-deep">Industry Experts</h3>
+              <p className="text-muted-foreground font-sans">
+                Learn from professionals currently working in leading tech companies
+              </p>
+            </div>
+
+            <div className="card-glow p-8 animate-fade-in" style={{ animationDelay: '100ms' }}>
+              <div className="w-14 h-14 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                <Award className="w-7 h-7 text-accent" />
+              </div>
+              <h3 className="text-xl font-display font-bold mb-3 text-deep">Recognized Certifications</h3>
+              <p className="text-muted-foreground font-sans">
+                Earn industry-recognized certificates that boost your resume
+              </p>
+            </div>
+
+            <div className="card-glow p-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
+              <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <TrendingUp className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-display font-bold mb-3 text-deep">Hands-On Learning</h3>
+              <p className="text-muted-foreground font-sans">
+                Work on real-world projects and build a portfolio that stands out
+              </p>
+            </div>
+
+            <div className="card-glow p-8 animate-fade-in" style={{ animationDelay: '300ms' }}>
+              <div className="w-14 h-14 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                <Sparkles className="w-7 h-7 text-accent" />
+              </div>
+              <h3 className="text-xl font-display font-bold mb-3 text-deep">Placement Support</h3>
+              <p className="text-muted-foreground font-sans">
+                Get career guidance, interview prep, and job placement assistance
+              </p>
+            </div>
           </div>
         </div>
       </section>
