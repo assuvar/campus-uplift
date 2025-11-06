@@ -27,7 +27,7 @@ const ProgramCard = ({ icon: Icon, title, description, featured, compact }: Prog
             <div className="inline-block mb-3 px-3 py-1 bg-primary/10 border border-primary/20 rounded text-primary text-xs font-grotesk font-semibold uppercase tracking-wide w-fit">
               Featured Program
             </div>
-            <CardTitle className="text-2xl mb-3 font-display text-deep">{title}</CardTitle>
+            <CardTitle className="text-2xl mb-3 font-sans font-bold text-deep tracking-wider">{title}</CardTitle>
             <CardDescription className="text-base mb-4 leading-relaxed font-sans">
               {description}
             </CardDescription>
@@ -48,7 +48,7 @@ const ProgramCard = ({ icon: Icon, title, description, featured, compact }: Prog
           <div className="w-12 h-12 rounded bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 shadow-md">
             <Icon className="w-6 h-6 text-white" />
           </div>
-          <CardTitle className="text-lg font-display text-deep">{title}</CardTitle>
+          <CardTitle className="text-lg font-sans font-bold text-deep tracking-wider">{title}</CardTitle>
         </CardHeader>
         <CardContent>
           <CardDescription className="text-sm leading-relaxed font-sans">
@@ -66,7 +66,7 @@ const ProgramCard = ({ icon: Icon, title, description, featured, compact }: Prog
         <div className="w-16 h-16 rounded bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
           <Icon className="w-8 h-8 text-white" />
         </div>
-        <CardTitle className="text-xl font-display text-deep">{title}</CardTitle>
+        <CardTitle className="text-xl font-sans font-bold text-deep tracking-wider">{title}</CardTitle>
       </CardHeader>
       <CardContent className="relative">
         <CardDescription className="text-base mb-4 leading-relaxed font-sans">

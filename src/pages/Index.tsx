@@ -4,7 +4,9 @@ import ProgramCard from "@/components/ProgramCard";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.svg";
-import { 
+import educationIcon1 from "@/assets/education-icon-1.png";
+import educationIcon2 from "@/assets/education-icon-2.png";
+import {
   FileSpreadsheet, 
   TrendingUp, 
   BarChart3, 
@@ -97,9 +99,13 @@ const Index = () => {
           }}></div>
         </div>
 
-        {/* Floating Shapes */}
-        <div className="absolute top-20 left-10 w-24 h-24 border-2 border-accent/20 rotate-45 animate-float"></div>
-        <div className="absolute bottom-32 right-20 w-16 h-16 border-2 border-accent/20 animate-float" style={{ animationDelay: '1s' }}></div>
+        {/* Floating Education Images */}
+        <div className="absolute top-20 left-10 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 opacity-20 animate-float hidden md:block">
+          <img src={educationIcon1} alt="Education" className="w-full h-full object-contain" />
+        </div>
+        <div className="absolute bottom-32 right-10 w-28 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 opacity-20 animate-float hidden md:block" style={{ animationDelay: '1s' }}>
+          <img src={educationIcon2} alt="Learning" className="w-full h-full object-contain" />
+        </div>
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
@@ -111,7 +117,7 @@ const Index = () => {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-8 text-white">
                 Engineering <span className="text-glow bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Future-Ready</span> Skills
               </h1>
-              <p className="text-xl md:text-2xl text-white/80 mb-10 leading-relaxed font-sans max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl text-white mb-10 leading-relaxed font-sans max-w-3xl mx-auto font-semibold">
                 Industry trainers. Campus programs. Job-ready students.
               </p>
               
@@ -122,9 +128,9 @@ const Index = () => {
                   "Industry-aligned curriculum & certifications",
                   "Hands-on projects & career placement support"
                 ].map((item, index) => (
-                  <div key={index} className="flex items-center justify-center gap-3 animate-slide-up" style={{ animationDelay: `${index * 100}ms` }}>
+                  <div key={index} className="flex items-center justify-center gap-3 animate-slide-up bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg border border-white/20" style={{ animationDelay: `${index * 100}ms` }}>
                     <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0" />
-                    <span className="text-white/90 font-medium text-lg">{item}</span>
+                    <span className="text-white font-semibold text-base md:text-lg">{item}</span>
                   </div>
                 ))}
               </div>
