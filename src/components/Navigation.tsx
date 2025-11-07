@@ -50,7 +50,7 @@ const Navigation = () => {
             ))}
             <Button
               size="default"
-              onClick={() => window.open("https://wa.me/9108918437", "_blank")}
+              onClick={() => window.open("https://wa.me/919035000569", "_blank")}
               className="gap-2"
             >
               <MessageCircle className="w-4 h-4" />
@@ -88,7 +88,7 @@ const Navigation = () => {
               <Button
                 size="default"
                 className="w-full gap-2"
-                onClick={() => window.open("https://wa.me/9108918437", "_blank")}
+                onClick={() => window.open("https://wa.me/919035000569", "_blank")}
               >
                 <MessageCircle className="w-4 h-4" />
                 Enquire

@@ -148,7 +148,7 @@ const Index = () => {
                   size="lg" 
                   variant="neon"
                   className="gap-2"
-                  onClick={() => window.open("https://wa.me/9108918437", "_blank")}
+                  onClick={() => window.open("https://wa.me/919035000569", "_blank")}
                 >
                   <MessageCircle className="w-5 h-5" />
                   Chat on WhatsApp
@@ -347,7 +347,7 @@ const Index = () => {
                 size="lg"
                 variant="outline"
                 className="gap-2 bg-white/10 border-white/30 text-white hover:bg-white/20"
-                onClick={() => window.open("https://wa.me/9108918437", "_blank")}
+                onClick={() => window.open("https://wa.me/919035000569", "_blank")}
               >
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp Us
@@ -356,7 +356,7 @@ const Index = () => {
                 size="lg"
                 variant="neon"
                 className="gap-2"
-                onClick={() => window.open("tel:+919108918437")}
+                onClick={() => window.open("tel:+919035000569")}
               >
                 <Phone className="w-5 h-5" />
                 Call Now
@@ -368,7 +368,7 @@ const Index = () => {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded p-4 hover:bg-white/10 transition-all">
                 <Phone className="w-6 h-6 text-accent mx-auto mb-2" />
                 <p className="text-white/60 text-sm mb-1">Phone</p>
-                <p className="text-white font-semibold">+91 91089 18437</p>
+                <p className="text-white font-semibold">+91 90350 00569</p>
               </div>
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded p-4 hover:bg-white/10 transition-all">
                 <Mail className="w-6 h-6 text-accent mx-auto mb-2" />
@@ -400,7 +400,7 @@ const Index = () => {
               <div className="text-sm text-black/60 space-y-1">
                 <p>15, 100feet ring road, near Jayadeva metro station</p>
                 <p>BTM 2nd stage, Bengaluru-560076</p>
-                <p className="mt-2">Phone: +91 91089 18437</p>
+                <p className="mt-2">Phone: +91 90350 00569</p>
                 <p>Email: contact@tgtechnology.com</p>
               </div>
             </div>
@@ -427,7 +427,7 @@ const Index = () => {
                 </li>
                 <li>
                   <button 
-                    onClick={() => window.open("https://wa.me/9108918437", "_blank")}
+                    onClick={() => window.open("https://wa.me/919035000569", "_blank")}
                     className="text-black/70 hover:text-accent transition-colors"
                   >
                     Contact
