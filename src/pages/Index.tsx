@@ -130,7 +130,7 @@ const Index = () => {
                 ].map((item, index) => (
                   <div key={index} className="flex items-center justify-center gap-3 animate-slide-up bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg border border-white/20" style={{ animationDelay: `${index * 100}ms` }}>
                     <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0" />
-                    <span className="text-white font-semibold text-base md:text-lg">{item}</span>
+                    <span className="text-black font-semibold text-base md:text-lg">{item}</span>
                   </div>
                 ))}
               </div>
