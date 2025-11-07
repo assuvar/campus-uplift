@@ -373,12 +373,12 @@ const Index = () => {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded p-4 hover:bg-white/10 transition-all">
                 <Mail className="w-6 h-6 text-accent mx-auto mb-2" />
                 <p className="text-white/60 text-sm mb-1">Email</p>
-                <p className="text-white font-semibold">contact@tgtechnology.com</p>
+                <p className="text-white font-semibold">ckptechnology@gmail.com</p>
               </div>
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded p-4 hover:bg-white/10 transition-all">
                 <MapPin className="w-6 h-6 text-accent mx-auto mb-2" />
                 <p className="text-white/60 text-sm mb-1">Location</p>
-                <p className="text-white font-semibold text-sm">BTM 2nd stage, Bengaluru-560076</p>
+                <p className="text-white font-semibold text-sm">15, 100feet ring road, near Jayadeva metro station, BTM 2nd stage, Bengaluru-560076</p>
               </div>
             </div>
           </div>
@@ -401,7 +401,7 @@ const Index = () => {
                 <p>15, 100feet ring road, near Jayadeva metro station</p>
                 <p>BTM 2nd stage, Bengaluru-560076</p>
                 <p className="mt-2">Phone: +91 90350 00569</p>
-                <p>Email: contact@tgtechnology.com</p>
+                <p>Email: ckptechnology@gmail.com</p>
               </div>
             </div>
 
