@@ -386,18 +386,18 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-deep text-white py-12 border-t border-accent/10">
+      <footer className="bg-white text-black py-12 border-t border-black/10">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             {/* Logo & Description */}
             <div>
               <div className="mb-4">
-                <img src={logo} alt="CK Technology Logo" className="h-24 w-auto md:h-32 lg:h-40 object-contain" />
+                <img src={logo} alt="CK Technology Logo" className="h-16 w-auto md:h-20 lg:h-24 object-contain" />
               </div>
-              <p className="text-white/70 mb-4 font-sans">
+              <p className="text-black/70 mb-4 font-sans">
                 Empowering colleges with industry-ready training programs.
               </p>
-              <div className="text-sm text-white/60 space-y-1">
+              <div className="text-sm text-black/60 space-y-1">
                 <p>15, 100feet ring road, near Jayadeva metro station</p>
                 <p>BTM 2nd stage, Bengaluru-560076</p>
                 <p className="mt-2">Phone: +91 91089 18437</p>
@@ -412,7 +412,7 @@ const Index = () => {
                 <li>
                   <button 
                     onClick={() => document.getElementById('programs')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-white/70 hover:text-accent transition-colors"
+                    className="text-black/70 hover:text-accent transition-colors"
                   >
                     Programs
                   </button>
@@ -420,7 +420,7 @@ const Index = () => {
                 <li>
                   <button 
                     onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-white/70 hover:text-accent transition-colors"
+                    className="text-black/70 hover:text-accent transition-colors"
                   >
                     About
                   </button>
@@ -428,7 +428,7 @@ const Index = () => {
                 <li>
                   <button 
                     onClick={() => window.open("https://wa.me/9108918437", "_blank")}
-                    className="text-white/70 hover:text-accent transition-colors"
+                    className="text-black/70 hover:text-accent transition-colors"
                   >
                     Contact
                   </button>
@@ -438,8 +438,8 @@ const Index = () => {
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-white/10 pt-8 text-center">
-            <p className="text-white/60 font-sans">
+          <div className="border-t border-black/10 pt-8 text-center">
+            <p className="text-black/60 font-sans">
               &copy; 2025 CK Technology. All rights reserved.
             </p>
           </div>

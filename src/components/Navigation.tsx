@@ -27,11 +27,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/80 backdrop-blur-lg shadow-md"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
@@ -46,7 +42,7 @@ const Navigation = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-deep font-grotesk font-medium hover:text-primary transition-all duration-200 relative group text-sm lg:text-base"
+                className="text-black font-grotesk font-medium hover:text-primary transition-all duration-200 relative group text-sm lg:text-base"
               >
                 {item}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
@@ -64,7 +60,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-deep hover:text-primary transition-colors"
+            className="md:hidden p-2 text-black hover:text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -78,12 +74,12 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in bg-white/95 backdrop-blur-lg rounded-lg mt-2 shadow-lg">
+          <div className="md:hidden py-4 animate-fade-in bg-white backdrop-blur-lg rounded-lg mt-2 shadow-lg">
             {menuItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="block w-full text-left px-4 py-3 text-deep font-grotesk font-medium hover:text-primary hover:bg-muted transition-all duration-200"
+                className="block w-full text-left px-4 py-3 text-black font-grotesk font-medium hover:text-primary hover:bg-muted transition-all duration-200"
               >
                 {item}
               </button>
