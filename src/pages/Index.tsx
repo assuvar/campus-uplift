@@ -26,6 +26,7 @@ import {
   MapPin
 } from "lucide-react";
 import heroImage from "@/assets/hero-students.jpg";
+import directorImage from "@/assets/director-prameela.jpg";
 
 const Index = () => {
   const programs = [
@@ -300,6 +301,44 @@ const Index = () => {
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-sans">
                 Our mission is to empower the next generation of professionals with practical skills and knowledge that align with current industry demands.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-muted/30 to-white">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="inline-block mb-4 px-4 py-1 bg-accent/10 border border-accent/20 rounded text-accent font-grotesk text-sm font-semibold uppercase tracking-wide">
+              Leadership
+            </div>
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-deep">
+              Meet Our Director
+            </h2>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="card-glow p-8 md:p-12 animate-fade-in">
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div className="order-2 md:order-1">
+                  <h3 className="text-3xl font-display font-bold mb-2 text-deep">Ms. Prameela R</h3>
+                  <p className="text-xl text-accent font-semibold mb-6">Director</p>
+                  <p className="text-lg text-muted-foreground leading-relaxed font-sans">
+                    Ms. Prameela R, a dynamic woman entrepreneur, motivator, and visionary, drives innovation and excellence at Petluri Edu-Tech. With a strong focus on inspiring younger generations to pursue knowledge and skills, her leadership ensures the delivery of impactful, value-added technical courses for students and professionals. Her commitment to empowering learners continues to guide them toward achieving success in their careers and beyond.
+                  </p>
+                </div>
+                <div className="order-1 md:order-2">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl"></div>
+                    <img 
+                      src={directorImage} 
+                      alt="Ms. Prameela R - Director" 
+                      className="relative rounded-2xl shadow-2xl w-full aspect-[3/4] object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
